@@ -1,0 +1,50 @@
+Java'da 7 farklı non-access modifier bulunmaktadır. Bunlar;
+- static
+- final 
+- abstract 
+- synchronized
+- transient 
+- volatile
+- native
+
+
+    Static Keyword: Static keyword Java'da esas olarak bellek yönetiminde kullanılır. Java'da static keyword, belirli bir sınıfın 
+        değişkenini veya methodunu farklı sınıflar ile paylaşmak için kullanılır. Kullanıcılar değşkenlere, methodlara, 
+        sınıflara, ve iç içe sınıflara static keyword ile değişken tanımlanmadan ilgili sınıf üzerinden erişebilirler. 
+        Static keyword sınıfın bir instance'ından ziyade sınıfa aittir. 
+
+    Final Keyword: Final keyword'ü farklı bağlamlarda kullanılmakla birlikte genellikle değiken tanımı yapılırken tanımlanmaktadır.
+        Final keyword bir non-access modifier'dır yani yalnızca bir değişkene, method'a veya sınıfa uygulanabilir. 
+        Final keyword'ün uygulandığı alanlar sırasıyla şu şekildedir; 
+
+            Final Variables(Final Değişkenler): 
+                    Final keyword'ü ile tanımlanan değişkenler bir kez initiliazed edildikten yani nesne olarak
+                oluşturulduktan sonra runtime boyunca başka bir nesneye dönüştürülemez. Bu kod içerisinde sabitler tanımlamak için ya da değiştirilmesi
+                istenmeyen değişkenlerin tanımlanması için kullanılır. 
+
+            Final Methods: 
+                    Bir method final olarak tanımlandığı zaman, herhangi bir alt sınıf tarafından override edilemez. Bu bir sınıfın genel API'sinin bir 
+                parçası olan ve alt sınıflar tarafından değiştirilememesi istenen methodlar için kullanışlıdır.
+
+            Final Classes: 
+                    Bir sınıf final olarak tanımlandığı zaman herhangi bir alt sınıf tarafından extend edilemez. 
+                Bu olduğu gibi kullanılması amaçlanan ve herhangi bir sınıfa kalıtım verilmesi istenilmeyen sınıflar için kullanışlıdır.
+
+            Initialization: 
+                    Final keyword'ü ile tanımlanan değişkenler ya tanımlandığı noktada ya da içerisine tanımlandığı constructor içerisinde 
+                başlatılmak zorundadır. Bunun amacı sınıf oluşturuluduğu anda bu değişkenin de oluşması gerektiği ve değerinin tekrar değiştirilmemesi gerektiğidir.
+
+            Performance: 
+                    Derleyici bir değişkenin veya yöntemin değiştirilemeyeceğini bildiğinde kodu daha etkili bir şekilde 
+                optimize edebildiğinden, final kullanımı bazen performansı artırabilir.
+            
+            Security: 
+                    Final keyword'ü, kötü niyetli kodların kullanarak hassas verilerin ya da davranışların değiştirilmesini
+                önleyeerek ve güvenliğin arrtırılamasını sağlayabilir. 
+
+    Abstract keyword: Abstract keyword sınıflarda ve methodlar da kullanılabilen bir non-access modifier'dır.
+
+        Abstract Classes: Soyut sınıf, nesneler oluşturmak için kullanılamayan sınırlı bir sınıftır (bu sınıfa erişmek için başka bir sınıftan miras alınması gerekir).
+        Abstract Method: Soyut bir yöntem yalnızca soyut bir sınıfta kullanılabilir ve gövdesi yoktur. Yani içerisine kod yazılamaz. Gövde alt sınıf (devralınan) tarafından sağlanır.
+
+

@@ -1,0 +1,19 @@
+Java'da 4 adet access modifier bulunmaktadır;
+ - public 
+ - private 
+ - protected
+ - default 
+
+ 1) Public access modifier: Bu access modifier ile tanımlanan sınıf, method veya değişkenler, 
+        kod içerisindeki herhangi bir yerden erişilebililr durumdadır.
+    Private access modifier: Bu access modifier ile tanımlanan method veya değişkenler yalnızca 
+        içerisinde tanımlandığı sınıf tarafından kullanılabilir durumdadır. Tanımlanan sınıflar ise 
+        yalnızca içerisinde tanımlandığı sınıf tarafından kullanılabilir.
+    Default access modifier: Bu modifier herhangi bir erişim işlemi yapmayacağımız zaman kullanılır. 
+        Bu modifier kullanıldığında java, değişkene veya sınıfa default bir erişim ayarlayacaktır. 
+        Default access modifiers aynı zamanda paket özelinde (package private) olarak bilinir. Bunun 
+        anlamı bu modifier ile tanımlanan tüm birimler yalnızca aynı pakette bulunan sınıflar tarafından
+        görülebilir. farklı bir pakette bulunan sınıflar bu birimlere erişim sağlayamaz. 
+    Protected access modifier: Bu access özellikleri, methodları veya constructorları aynı paket altında ve 
+        alt sınıflardan erişilebilir hale getirir. Aynı zamanda farklı paketlerden ve bu paketlerin alt sınıflarından
+        da erişilebilir. 

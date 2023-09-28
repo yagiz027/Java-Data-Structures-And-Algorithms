@@ -1,0 +1,8 @@
+Java.lang.Cloneable interace'i bir marker interface'dir. Yani içerisinde herhangi bir 
+veri türü veya method barındırmaz. JDK 1.0'dan beri bulunmaktadır. 
+Object sınıfı içerisinde clone() methodunu barındırır. 
+Clonable interface  Object.clone() methodunu oluşturmak için bir sınıf'a implemente edilmelidir. 
+Bu interface new operatör'ü kullanarak obje tanımlamak yerine objelerin kopyalanmasına olanak tanır. 
+Eğer Clonable interface'i clone'u alınmak istenen sınıfa implemente edilmez ise clone alınmaya çalışılırken 
+ClonenotSupportedException hatası ile karşı karıya kalınır. 
+
