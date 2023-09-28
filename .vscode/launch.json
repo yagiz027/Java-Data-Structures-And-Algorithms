@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ReverseListRecursion",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.ReverseList.ReverseListRecursion",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "ReverseListİterasion",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.ReverseList.ReverseListİterasion",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "FindingLengthOfLinkedListRecursive",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.FindingLengthOfLinkedListRecursive",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArrayMain",
+            "request": "launch",
+            "mainClass": "Arrays.main.java.yagiz.ArrayMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "CloneMain",
+            "request": "launch",
+            "mainClass": "Clone.main.java.yagiz.CloneMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "FindingLengthOfLinkedListIterative",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.FindingLengthOfLinkedListIterative",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "LinkedListMain",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "SerializationExampleMain",
+            "request": "launch",
+            "mainClass": "SerializationAndDeserialization.main.java.yagiz.SDexample.SerializationExampleMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "SDexampleWithUIDMain",
+            "request": "launch",
+            "mainClass": "SerializationAndDeserialization.main.java.yagiz.SDexampleWithUID.SDexampleWithUIDMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+Array yapısı hafızada birden fazla veri tutmak için kullanılan statik ve linear yapıda olan bir veri yapısıdır.
+Array'lerin en büyük eksilerinden biri hafızada kapladığı alanın dinamik olmayışıdır. 
+Örneğin içerisinde {1,2,3,4,5} gibi int tipinde veri tutan bir array'imiz var. 
+Bu array'e yeni bir eleman olarak 6 değerini eklemek istiyoruz. 
+Bu durumda ekleme işlemini yaptığımız zaman hafızada 6 index'lik yeni bir alan oluşturuluyor ve '6' değeri 
+buraya ekleniyor. Ardından ise diğer 5 değer bu değerin yanına ekleniyor. Böylece ekleme işlemi gerçekleşmiş oluyor. 
+Bu durum büyük big data içeren programlar için çok fazla iş yükü oluşmasına sebebiyet verebiliyor. 
+
+Bu duruma çözüm olarak dinamik Array yaklaşımı kullanılmak istenirse de optimize olamayan yazılımlar ortaya çıkabiliyor. 
+Örneğin 5 elemanlı bir dizimiz var ancak biz bu dizinin boyutunu önceden 10 eleman alacak şekilde yapılandırmıştık.
+Bu durumda 6. ve 7. elemanları eklediğimiz zaman daha fazla veri eklenmemesi durumunda dizi içerisindeki boş alanlar hafızada
+boşa yer tutmuş olur. 
+
+Java'da ise Array'ler C ve C++ da olduğundan biraz farklıdır. Java'da Array'ler birer nesne olarak tanımlandıkları için dizinin 
+uzunluğuna, belirtilen index'de bulunan elemanın değerine veya tipine ya da dizi üzerinde ekleme çıkarma gibi fonksiyonel işlemlere
+birer property object üzerinden erişebiliriz. 
+
+Java'da her Array tipi Cloneable ve Serializable interfacelerini implemente eder. 
+
+Array Tipleri:
+    - One Dimensional Arrays
+    - Multi Dimensional Arrays
+    - Jagged Arrays
+    - Final Arrays
+    - Reflection Arrays
+
+    One Dimensional Arrays (Tek boyutlu diziler): Doğrusal bir düzlemde tek boyuttan oluşan dizilere verilen isimdir.
+    Multiple Dimensional Arrays (Çok boyutlu diziler): Yatayda ve dikeyde belirli bir sütun ve satır sayısı bulunan, bu satır ve sütun sayısına göre 
+    oluşturulan dizilere verilen isimlerdir. 
+    Jagged Arrays: İçersinde bulundurduğu üye dizilerinin her birinin veya bazılarının farklı boyutlarda 
+    olabileceği dizilere verilen isimdir. 
+        Jagged Array'lerin avantajları:
+            - Dynamic allocation: Jagged diziler belleği dinamik olarak ayırmamıza olanak tanır. Yanı her alt dizinin boyutunu çalışma zamanında
+            değiştirebiliriz.
+            Space Utilization: Jagged diziler her bir alt dizinin boyutunu eşit olmadığında bellekten tasarruf edebilir. Dikdörgensel düzende
+            bulunan bir çok boyutlu dizide, tüm alanlar kullanılmayacak olsa bile tüm alt diziler eşit boyut da olmak zorundadır. Jagged diziler
+            de ise yalnızca ihtiyacımızın olduğu kadar bellek miktarını ayarlayarak gereksiz bellek kullanımından kaçmış oluruz.
+            - Flexibility: Jagged diziler farklı boyutlardaki dizileri depolamamız gerektiğinde veya önceden saklamamız gereken dizinin 
+            boyutu bilinmediğinde kullanışlı olabilirler.
+            - Improved Performance: Bellek düzeni daha kompakt olduğundan, jagged diziler, öğelere erişim veya alt diziler
+            üzerinde yineleme gibi belirli işlemler için dikdörtgen dizilerden daha hızlı olabilir. 
+
+        Jagged Dizilerin dezavantajları:
+            - Kompleks bir yapıda olduğundan kod okunabilirliğini azaltabilir. Bu yüzden dikkatlice kullanılmalıdır. 
+
+    Final Arrays: Birkez tanımlandıktan sonra başka bir diziye dönüştürelemeyen ancak içerisindeki verilerin üzerinde değişiklik yapabildiğimiz dizilerdir. 
+

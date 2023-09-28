@@ -1,0 +1,31 @@
+LinkedList Nedir?
+    LinkedList veri yapısı linear bir düzlemde içerisindeki elemanların bitişik hafıza konumlarında direkt olarak 
+    saklanmadığı bir veri yapısıdır. Bu yapının içerisindeki elemanlar pointer'lar ile birbirlerine bağlıdır. 
+    Basit bir şekilde açıklamak gerekirse linkedlist içerisindeki her düğümün(node) bir veri alanı ve kendisinden 
+    sonra gelen düğüme referans verdiği bir pointer'ı bulunmaktadır.
+
+    LinkedList içerisinde ilk düğümü işaret eden bir head pointer tutmaktadır. Eğer liste boş ise bu pointer 
+    null veya boş bir değer döndürecektir.
+
+    LinkedList'in Avantajları:
+
+    - Dynamic Data Structure: LinkedList'e veri ekleme veya silme işlemine bağlı olarak runtime'da LinkedList'e yeni bir
+    node tahsis edilebilir veya tahsisi kaldırılabilir. Yani LinkedList'in boyutu dinamik olarak arrtırılıp azaltılabilir. 
+    - Ease Of Insertion/Deletion: Array yapısına göre ekleme ve silme işlemleri çok daha basittir. Array de olduğu gibi ekleme 
+    veya silme işlemlerinden sonra herhangi bir kaydırma işlemine gerek duyulmaz. Yalnızca adresi taşıyan pointer'ın güncellenmesi
+    yeterlidir.
+    - Efficient Memory Using (Verimli Bellek Kullanımı): LinkedList ihtiyaç duyulan eleman sayısına göre dizinin boyutunu dinamik olarak
+    azaltıp arttırdığı için array'de olduğu gibi gereksiz bir bellek kullanımına sebebiyet vermez. 
+    - Implementation: stack, queue, graph, hash, maps gibi gelişmiş veri yapıları LinkedList kullanılarak implemente edilebilir.
+
+    LinkedList'in Dezavantajları:
+    - Random Access: Array'de olduğu gibi LinkedList'lerde elemanlara index numarası üzerinden erişim sağlayamayız. Belirli bir düğüme ulaşmak
+    için düğümler üzerinde hareket ederek ulaşmak istediğimiz eleman'a gitmemiz gerekir.
+    - Extra Memory: LinkedList'ler array'lere kıyasla pointer'ları tutmak için ekstra belleğe ihtiyaç duyarlar.
+
+    3 Temel LinkedList Tipi Vardır:
+    - Single-linked list (Tek Bağlı Liste)
+    - Double-linked list (Çift Bağlı Liste)
+    - Circular-linked list (Dairesel Bağlı Liste)
+
+    Single-linked list: Öğelerin geçişi yalnızca her düğümün bir sonraki düğüme bağlanması ile ileri yönde yapılabilir.
