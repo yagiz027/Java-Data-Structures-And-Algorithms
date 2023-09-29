@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashTableMain",
+            "request": "launch",
+            "mainClass": "HashTables.main.java.yagiz.HashTableMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "ReverseListRecursion",
             "request": "launch",
             "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.ReverseList.ReverseListRecursion",
