@@ -1,0 +1,52 @@
+Data Strucute And Algotihms Nedir?
+    - Data Structure(Veri yapıları):
+    - Verileri cihazlarımızda düzenli ve efektif bir şekilde saklamanın belirli bir yolu olarak tanımlanır. 
+    - Veri yapılarını kullanmamız temel amacı, geliştirdiğimiz uygulamalarımızda gerçekleştirdiğimiz işlemler sonucu karşımıza 
+      çıkabilecek verimsizlikleri ve uygulamada karşılaştığımız zaman ve mekan karmaşıklarını minimize etmektir. 
+    - Etkili bir veri yapısı veriyi işlemek için minimum zaman ve minimum bellek boyutu gerektirmelidir. 
+
+    Algorithm (Algoritma):
+        - Bir grup sorunu çözmek  veya hesaplamaları gerçekleştirmek için gerçekleştirdiğimiz süreç veya iyi tanımlanmış 
+        talimatlar dizisi olarak tanımlanır. 
+        - Daha basit bir tanım yapacak olursak, sorunun çözümüne ulaşmak için gerçekleştirdiğimiz iyi tanımlanmış adımlar dizisine
+        algoritma adı verilir.
+    
+    Data Structure Types (Veri Yapısı Türleri):
+        Veri yapısı türleri en temelde iki bölüme ayrılır. Bunlar;
+            - Linear Data Structures :
+                Doğrusal bir düzlemde hareket eden veri yapılarıdır.
+
+            - Non-Linear Data Structures:
+                Doğrusal bir düzlemde hareket etmeyen veri yapılarıdır. 
+
+            Linear Data Structures:
+                Bu yapılar da kendi içerisinde static ve non-static olmak üzere iki parçaya ayrılır:
+
+                Static Linear Data Structures: 
+                    - Static olan linear veri yapılarında yapının boyutu sabittir. Veri yapısının içeriği değiştirilebilir ancak 
+                      bellekte kendisine ayrılan alan değiştirilemez. 
+                    - Bu yapılara en büyük örnek Array ve HashTable veri veri yapılarıdır. 
+
+                Non-Static (Dynamic) Linear Data Structures:
+                    - Bu yapılarda yapının boyutu sabit değildir ve işlemler sırasında otomatik olarak arttırılıp azaltılabilir.
+                    - Bu yapılar çalışma zamanında veri yapılarının değişimini kolaylaştırmak için tasarlanmıştır. 
+                    - Bu yapılara LinkedList, Queue, Stack gibi veri yapıları örnek gösterilebilir.
+
+            Non-Linear Data Structures:
+                - Veri öğelerinin sıralı veya doğrusal bir düzlemde düzenlenmediği veri yapılarına Non-Linear data structures adı verilir.
+                - Non-linear bir veri yapısında tek bir düzey yer almaz. Bu nedenle içerisindeki tüm unsurları yalnızca tek seferde geçemeyiz.
+                - Non-linear veri yapılarını doğrusal yani linear veri yapılarıyla karşılaştırdığımızda implementasyonları kolay değildir. 
+                - Doğrusal veri yapılarına kıyasla bellek boyutunu daha efektif kullanmaktadırlar. 
+                - Bu yapılara tree ve graphs veri yapıları örnek gösterilebilir.
+                
+
+        
+
+
+
+
+
+
+
+    
+    
