@@ -1,0 +1,133 @@
+HashTable: 
+    Hashing Nedir? 
+            Hashing, hash fonksiyonları olarak bilinen matematiksel formülleri kullanarak değişken büyüklükteki bir girdiden sabit boyutlu bir çıktı üretme sürecini ifade eder.
+          Bu teknik, bir veri yapısındaki bir öğenin saklanması için bir dizin veya konum belirlememizi sağlar.
+          Yani veri yapılarına eklenecek olan verinin yapıdaki hangi index'e eklenmesi gerektiğini belirlemimizi sağlar.
+          Bunu belirleme amacımız ise searching yani arama algoritmaları sırasında arama maliyetini minimum düzeye düşererek,
+          daha hızlı aramalar yapmamıza olanak sağlamasıdır.
+
+        * Hash Veri Yapısına Neden İhtiyaç duyarız:
+            Her ne kadar Array gibi linear veri yapıları veriyi veri setlerine ekleme işlemlerinde kullanışlı olsa da,
+            dizi içerisinde bulunması istenen veriyi bulma konusunda büyük veri setleri işin içine girdiği zaman çok da verimli
+            olamayabiliyor. İşte tam burada veriyi saklayabilecek ve birim zamanda aranan veriye bizi kolayklıkla ulaştırabilecek
+            bir veri yapısı arayışına giriyoruz. Bu noktada hash veri yapısı devreye giriyor ve verileri sabit zamanlı olarak kolayca
+            depolamak ve sabit zamanlı olarak almak çok daha kolay bir hal alıyor.
+
+        * Hash Veri Yapısının Bileşenleri (Components):
+            - Key: Yapıdaki verinin bulunduğu index'i gösteren bileşendir. Sayısal bir değer olabileceği gibi metinsel bir değer de olabilir.
+            - Hash Function: Hash function, input key'i alır ve hash table adı verilen bir dizideki bir öğenin dizinini döndürür.
+            - Hash Table: Hash function denen özel bir function(işlev) kullanarak, key değerleri veriler ile eşleştiren bir veri yapısıdır. 
+
+        * Hashing'in Veri Yapılarındaki Avantajları:     
+            - Key-value supports: Hashing, key - value veri yapılarını uygulamak için ideal bir yöntemdir.
+            - Fast Data retrieval: Hasing sabit zamanlı karmaşıklıklarda verilere hızlı erişim sağlamamıza yaradımcı olur. 
+            - Efficiency: Ekleme, Silme ve Arama işlemleri daha verimlidir. 
+            - Memory Usage Reduction: Hashing, öğeleri depolamak için bellekte sabit bir alan ayırdığından daha az bellek gerektirir.
+            - Scalibility: Sabit erişim süresini koruyarak büyük veri kümeleriyle iyi performans gösterir.
+            - Secure and encryption: Hashing, veri bütünlüğünün korunması ve güvenli veri depolanması için gereklidir.
+        
+        * Hashing nasıl çalışır?
+            - Elimizde hash table'da saklamak istediğimiz bir dizi olduğunu varsayalım {"ab","cd","efg"}
+            - Buradaki temel amacımız ise table içerisinde verileri efektif bir şekilde aramak ve güncellemek olsun.
+            - Verilerin tablodaki sıralamasıyla ilgilenmeyiz.
+            - Yani verilen dizi kümesi bir key gibi davranabilir ve dizenin kendisi de dizenin değerine (value) karşılık gelecektir. 
+
+            Peki burada key'e karşılık gelen veriyi nasıl saklarız?
+                - Hashing ile veriyi nereye ekleyeceğimiz bir liste vasıtasıyla belirlenir. Daha sonra da arama işlemi için de aynı mantık
+                kullanılacağından hızlı bir bulma işlemi gerçekleşmiş olur.Eklenmek istenen sayı oluşturulan liste dizisinin boyutuna göre 
+                modunun alınması ve mod değerine göre ilgili index'e yerleştirilmesi işlemi ile çalışır. Örneğin 10 elemanlı bir diziye '23'
+                sayısının ekleneceğini düşünelim. Burada 23 sayısı 10'a bölümünden kalan 3 olacaktır. Bu da bize 23 sayısının dizide 
+                3. index'e yerleştirileceğini gösterir.
+
+                - Yukarıdaki teknik, basit bir karma işlevi kullanarak belirli bir dizenin konumunu hesaplamamıza ve o konumda saklanan değeri 
+                  hızlı bir şekilde bulmamıza olanak sağlar. 
+                  
+        * Hash Function Nedir?
+                Hash function hash table yapısında key-value değerleri arasında bir eşleşme oluşturur. Bu işemler hash functions denilen matematiksel hesaplamalar
+                kullanılarak yapılmaktadır. Hash funciton'nın sonucuna hash değeri ya da hash adı verilir. Hash değeri orjinal karakter dizisinin bir temsilidir 
+                ancak genellikle orjinalinden daha küçüktür. 
+
+            - Hash Function Türleri: 
+                Sayısal veya alphanumeric key'leri kullanan birçok karma işlevi vardır. Bunlar;
+                    - Division Method (Bölme Yöntemi)
+                    - Mid Square Method (Orta Kare Yöntemi)
+                    - Digit Folding (Katlama Yöntemi)
+                    - Multiplication Method (Çarpma Yöntemi)
+
+                    Division Method (Bölme Yöntemi):
+                      - En basit ve kolay hash oluşturma yöntemidir. 
+                      - Fonksiyon k değerini M 'ye böler ve elde kalan değeri indexleme için kullanır:
+
+                        Formül:
+                            h(k) = k Mod M :
+                                - Burada k anahtar değeridir.
+                                - M ise HashTable'ın boyutudur.
+                        
+                      - Burada anahtarların daha düzgün bir şekilde dağıtılabilmesi adına HashTable 
+                        boyutunun bir asal sayı olması daha makuldür.
+            
+                
+                    Mid Square Method(Orta Kare Yöntemi):
+                        - Hash değerini hesaplamak için kullanılan oldukça iyi bir hesaplama yöntemidir. Yalnızca iki adımdan oluşur.
+
+                        Formül:
+                            h(K)=h(k x k)
+
+                        Burada k değerinin karesi alınır ve çıkan sonucun orta rakamlar hash değeri olarak atanır.
+                        
+                        Örneğin 100 elemanlı bir listede k değerimiz yani başlangıç sayımız 60 olsun bu durumda hash değerimiz çıkan sonuç 3600 olduğu için 
+                        ve ortasındaki sayılar 60 olduğu için 60 olur.
+
+                    Digit Folding (Katlama Yöntemi):
+                        Bu yöntem iki adımdan oluşur: 
+                          - Anahtar/değer k'yı birkaç parçaya bölün; örneğin k1, k2, k3,….,kn ; 
+                            burada her parça, diğer parçalardan daha az rakama sahip olabilen son kısım hariç,
+                            aynı sayıda rakama sahiptir.
+
+                          - Tek tek parçaları ekleyin. Hash değeri, varsa son taşımanın göz ardı edilmesiyle elde edilir.
+
+                          Formül:
+                            k = k1, k2, k3, k4, ….., kn
+                            s = k1+ k2 + k3 + k4 +….+ kn
+                            h(K)= s
+
+                            Burada k anahtarının parçaları eklenerek
+                            s değeri elde edilir.
+                        
+                        Örneğin: k değerimiz 123456 olsun. Bu durumda k;
+                        k = k1(12) + k2(34) + k3(56) = 102 olur.
+                        Yani hash değeri 102'dir.
+
+                    Multiplication Method (Çarpma Yöntemi):
+                        Bu yöntem aşağıdaki adımlardan oluşur:
+                            - 0 ile 1 arasında olacak şekilde bir constant value(devamlılık değeri) seçin (0<A<1)
+                            - key değeri ile değerini çarpın. 
+                            - k*A'nın kesirli kısmını çıkarın.
+                            - Yukarındaki işlemin sonucunu hash table'ın boyutuyla yani M ile çarpın. 
+                            - Ortaya çıkan hash değeri yukarıdaki adımın sonucunda ortaya çıkan değerin tabanı olarak ele alınır.
+
+                        Formül:
+                            h(k) =  floor(M * (k*A Mod 1))
+                        
+                        Burada M hash table'ın boyutudur. 
+                        k anahtar değerdir. 
+                        A ise constant value (devamlılık değeri)'dir.
+
+                        Örneğin: 
+                            A = 0.35, k = 12345, M=100 olsun. 
+                            Bu durumda: 
+                            h(12345) = floor[100 * (12345 * 0.35 mod 1)]
+                            h(12345) = floor[100 * (4320.75 mod 1)]
+                            h(12345) = floor[100 * 0.75]
+                            h(12345) = floor[75]
+                            h(12345) = 75 olur.
+
+        * İyi Bir Hash Function'nın özellikleri: 
+            - Verimli bir şekilde hesaplanabilmelidir.
+            - Key değerleri eşit şekilde dağıtılmalıdır (Atanacak her bir table konumu her öğe için eşit olasılıkta olmalıdır).
+            - Collision en aza indirgenmelidir. 
+            - Düşük load factor'a (Yük faktörü) sahip olmalıdır.(Tablodaki öğe sayısının tablonun boyutuna bölümü)
+
+        * Collision Nedir? 
+            Hash function büyük bir key değeri için daha küçük sayılar sağlamaktadır. Bu durumda bazen iki farklı anahtar aynı değeri temsil edebilmektedir
+            buna Collision (Çarpışma) ad ı verilmektedir. Bu durumun Collision handling adı verilen teknolojiler kullanılarak önlenmesi gerekmektedir.
