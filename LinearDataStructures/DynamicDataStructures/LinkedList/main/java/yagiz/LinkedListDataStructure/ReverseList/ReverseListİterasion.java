@@ -1,6 +1,6 @@
-package LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.ReverseList;
+package LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListDataStructure.ReverseList;
 
-import LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.Node;
+import LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListDataStructure.Node;
 
 public class ReverseListİterasion {
     Node head;

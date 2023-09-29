@@ -1,6 +1,6 @@
-package LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.FindingNodeCount;
+package LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListDataStructure.FindingNodeCount;
 
-import LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.BasicOpertationsLİnkedList.Node;
+import LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListDataStructure.Node;
 
 public class FindingLengthOfLinkedListRecursive {
     private Node head;
