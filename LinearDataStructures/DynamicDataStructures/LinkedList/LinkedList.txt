@@ -24,8 +24,79 @@ LinkedList Nedir?
     - Extra Memory: LinkedList'ler array'lere kıyasla pointer'ları tutmak için ekstra belleğe ihtiyaç duyarlar.
 
     3 Temel LinkedList Tipi Vardır:
-    - Single-linked list (Tek Bağlı Liste)
-    - Double-linked list (Çift Bağlı Liste)
-    - Circular-linked list (Dairesel Bağlı Liste)
+        1) Single-linked list (Tek Bağlı Liste)
+        2) Double-linked list (Çift Bağlı Liste)
+        3) Circular-linked list (Dairesel Bağlı Liste)
 
-    Single-linked list: Öğelerin geçişi yalnızca her düğümün bir sonraki düğüme bağlanması ile ileri yönde yapılabilir.
+        1) Single linked list (Tek bağlı liste): 
+                En temel linked list yapısıdır. LinkedList içerisindeki her node bir veriyi içeren bir data
+            alanı ve kendisinden bir sonraki düğümü işaret eden pointerlar içerir. LinkedList içerisinde henüz hiçbir değer
+            yok iken en başta bir head node bulunur. Bu node'un herhangi bir data'sı yoktur ve kendisinden sonra gelecek olan 
+            node'u gösteren bir pointer içerir. Bu nedenle eğer linkedlist oluşturulduğunda yazdırılmaya çalışılırsa boş ya da
+            null bir değer döndürülür. 
+            Bu yapıda 3 temel ekleme ve kaldırma işlemi bulunmaktadır;
+            - Listenin başından ekleme ve kaldırma işlemi
+            - Listenin sonundan ekleme ve kaldırma işlemi
+            - Liste'de bulunan spesifik bir konumdan (node) ekleme ve kaldırma işlemi
+            
+        2) Doubly-linked list (Çift bağlı liste): 
+                Bu yapı temel LinkedList yapısına çok benzemektedir ancak bundan çok bariz bir farkı bulunmaktadır.
+            Bu fark ise içerisinde bulunan her node'un kendisinden sonraki node'u gösterdiği bir pointer'ı olduğu 
+            gibi kendisinden önce gelen node'u gösteren bir previous pointer'ı da olduğudur. Böylece node'lar arasında 
+            daha rahat geçiş yapılabileceği gibi listeyi tersten veya olduğu gibi yazdırabilmemizi sağlar. 
+            
+            * Özellikleri:
+                - İleri ve Geri Gezinme: 
+                        Her düğüm, hem bir sonraki düğümü hem de bir önceki düğümü gösteren pointer'lara sahiptir.
+                    Bu, listede hem ileri hem de geri yönde kolayca gezinmemizi sağlar.
+                    
+                - Çift Yönlü Ekleme ve Kaldırma:
+                     Bu yapının sağladığı özellikler sayesinde, listeden bir düğümü çıkarmak veya yeni
+                    bir düğüm eklemek daha esnek hale gelir. Listenin başından veya sonundan ekleme ve kaldırma işlemleri, tek bağlı 
+                    listelere benzer şekilde yapılabilir. Ancak çift bağlı listede, bir düğümü belirli bir konumdan çıkarmak veya belirli bir 
+                    konuma eklemek daha kolaydır çünkü önceki ve sonraki düğümlere erişim kolaydır.
+
+                - Ters Sıralama: 
+                        Çift bağlı liste, verileri ters sırayla veya her iki yönde de kolayca dolaşma yeteneği sunar. 
+                    Bu, bazı uygulamalarda oldukça yararlıdır.
+
+                - Bellek Tüketimi:
+                        Çift bağlı listeler, tek bağlı listelere göre daha fazla bellek tüketebilir çünkü her düğüm, iki farklı pointer içerir.
+                    Ancak bu ek bellek maliyeti, daha fazla işlevselliği ve kolay erişimi sağlamak için ödenebilecek bir maliyettir.
+
+        3) Circular LinkedList (Döngüsel bağlı liste):
+                Circular linked list, düğümlerin bağlantılarının baştan sona doğru gitmek yerine son düğümün başa dönerek dairesel bir şekilde 
+            bağlandığı bir veri yapısıdır. Yani son düğüm, ilk düğümü gösterir ve bu nedenle liste sonsuz gibi davranır. 
+
+            * Özellikleri:
+                - Sonsuz Döngü: 
+                        Dairesel bağlı liste, son düğümün başa geri dönmesi nedeniyle sonsuz bir döngü oluşturur. 
+                    Bu, liste üzerinde döngüsel işlemler gerçekleştirmek için çok kullanışlıdır.
+
+                - Node'lar Arası Gezinme: 
+                        Listenin son düğümü, ilk düğümü işaret ettiği için düğümler arasında dolaşmak daha kolaydır. 
+                    Listenin sonundan başa doğru veya baştan sona doğru gezinmek için özel bir çaba harcamanıza gerek yoktur.
+
+                - Başa ve Sona Ekleme: 
+                        Dairesel bağlı listeye bir düğüm eklediğinizde, son düğümün sonraki düğüm olarak başa dönmesi gerektiğini unutmayın.
+                    Bu, yeni düğümü listenin başına veya sonuna eklemeyi oldukça basit hale getirir.
+
+                - Sıklıkla Döngüsel İşlemler: 
+                        Dairesel bağlı liste, döngüsel işlemler gerektiren birçok uygulamada kullanılır. Örneğin, bir dairesel kuyruk 
+                    veya dairesel tampon gibi veri yapısı uygulamalarında kullanışlıdır.
+
+                - Dikkat Edilmesi Gerekenler: 
+                        Dairesel bağlı liste kullanırken, boş bir liste veya tek bir düğüm durumlarını özel olarak ele almanız gerekebilir.
+                    Ayrıca dikkatli olmanız gereken bir diğer konu, liste içinde sonsuz bir döngü oluşturacak şekilde yanlışlıkla düğüm 
+                    bağlantıları oluşturmaktan kaçınmaktır.
+
+    LinkedList class (Collection Framework): 
+        - LinkedList sınıfı java.util.package altında bulunan Collection Framework'ün bir parçasıdır. 
+        - Bu sınıf yukarıda bahsi geçen veri yapısının bir implementasyon (uygulama) sınıfıdır. 
+        - LinkedList sınıfı dinamik bir dizi gibi davranır. Böylece diziyi tanımlarken boyutunu önceden belirtmemize gerek yoktur.
+        - LinkedList data structure'ın implementasyonunu sağladığı için içerisine veri eklendiğinde veya silindiğinde dizinin 
+        boyutu otomatik olarak düzenlenir. 
+        - Ayrıca içerisine eklenen elemanlar sürekli bir biçimde depolanmaz. Yani LinkedList dahili olarak doubly linked list (çift bağlı liste) 
+        veri yapısını implemente eder. 
+        - Doubly linked veri yapısı ile singe linked list veri yapısı arasındaki temel fark, doubly linked list veri yapısında ekstra bir pointer daha
+        bulunmasıdır. Single linked list yapısındaki data ve next pointer'a ek olarak içerisinde önceki node'u gösteren bir previous pointer bulunur. 
