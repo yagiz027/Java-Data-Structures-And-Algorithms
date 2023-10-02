@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConcurrentHashMapMain",
+            "request": "launch",
+            "mainClass": "HashTables.main.java.yagiz.ConcurrentHashMapMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "LinkedHashMapMain",
+            "request": "launch",
+            "mainClass": "HashTables.main.java.yagiz.LinkedHashMapMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "HashMapMain",
+            "request": "launch",
+            "mainClass": "HashTables.main.java.yagiz.HashMapMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "HashTableMain",
             "request": "launch",
             "mainClass": "HashTables.main.java.yagiz.HashTableMain",

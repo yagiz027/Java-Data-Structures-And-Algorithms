@@ -1,4 +1,4 @@
-package HashTables.main.java.yagiz;
+package Maps.main.java.yagiz;
 
 import java.util.Hashtable;
 

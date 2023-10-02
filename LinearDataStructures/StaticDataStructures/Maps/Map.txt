@@ -1,5 +1,4 @@
-HashTable: 
-    Hashing Nedir? 
+Hashing Nedir? 
             Hashing, hash fonksiyonları olarak bilinen matematiksel formülleri kullanarak değişken büyüklükteki bir girdiden sabit boyutlu bir çıktı üretme sürecini ifade eder.
           Bu teknik, bir veri yapısındaki bir öğenin saklanması için bir dizin veya konum belirlememizi sağlar.
           Yani veri yapılarına eklenecek olan verinin yapıdaki hangi index'e eklenmesi gerektiğini belirlemimizi sağlar.
@@ -130,4 +129,55 @@ HashTable:
 
         * Collision Nedir? 
             Hash function büyük bir key değeri için daha küçük sayılar sağlamaktadır. Bu durumda bazen iki farklı anahtar aynı değeri temsil edebilmektedir
-            buna Collision (Çarpışma) ad ı verilmektedir. Bu durumun Collision handling adı verilen teknolojiler kullanılarak önlenmesi gerekmektedir.
+            buna Collision (Çarpışma) adı verilmektedir. Bu durumun Collision handling adı verilen teknolojiler kullanılarak önlenmesi gerekmektedir.
+
+
+    HashTable Class:
+        - Java'da HashTable sınıfı, anahtarları değerlere işleyen bir hash table yapısını uygular. 
+        - Herhangi boş olmayan bir nesne, anahtar veya değer olabilir. 
+        - Nesneleri başarılı bir şekilde hash table'da saklamak ve almak için, anahtar olarak kullanılacak nesnenin hashCode ve equal methodlarını kullanması 
+        gerekmektedir.
+
+        - java.util.HashTable sınıfı Map arayüzüne benzer olarak, java'da key-value yapısını sağlayan bir sınıftır. 
+        - Java Collections framework'ün bir parçasıdır ve Java 1.0'da tanıtılmıştır. 
+        - Ancak HashTable sınıfının artık geçerliliğini yitirdiği ve kullanılmaması gerekildiği düşünülmektedir. Bunun sebebi ise Collections 
+        Framework'ünden önce tanıtılmış olmasından dolayı Map interface'ini implemente etmemesi olarak görülüyor. Çünkü Map interface'ini implemente etmemesi Collections
+        Framework içerisindeki diğer bileşenlerle birlikte kullanılmasınıı zorlaştırıyor. 
+        - Ek olarak HashTable sınıfı synchronized'dır. Bu da Map interface'nin diğer implementasyonlarıyla karşılaştırıldığında daha yavaş kalmasına sebep olmaktadır. 
+        - Genellikle HashTable yapısını kullanmak yerine (HashMap veya ConcurrentHashMap) gibi Map interface'inin implementasyon sınıflarının kullanılması önerilir.
+
+    HashMap Class: 
+        - Java HashMap HashTable sınıfına bencer, ama senkronize değildir. 
+        - Null değerlerinde anahtar olarak saklanmasına izin verir, ancak yalnızca tek bir tane null key nesnesi bulunmalıdır ve 
+        herhangi bir sayıda null value olabilir.    
+        - Bu sınıf haritanın sırası konusunda herhangi bir garanti vermez. 
+        - Bu sınıfı ve methodlarını kullanabilmek için, java.util.HashMap package'ını ya da herhangi bir superclass'ını import etmeniz gerekmektedir.
+        - HashMap sınıfı AbstractMap abstract class'ının sub-class'ıdır. AbstractMap sınıfı ise Map interface'inin implementasyon sınıfıdır.
+        - HashMap non-synchronized bir yapıdadır. Yani Multi-thread yapılar için güvenilir bir yapı değildir. 
+        - HashCode:
+            - Bir Map key-value çiftini saklamak için bir dizi gruptan oluşur. Her grubun benzersiz bir kimliği vardır ve bir gruba bir 
+              key-value çifti eklendiğinde anahtarın HashCode'u, grubun tanımlayıcısıyla eşleştirilir ve eşleşirse çift başarılı bir şekilde saklanır.
+
+    LinkedHashMap Class:
+        - LinkedHashMap sınıfı içerisine eklenen key-value çiftlerini koruması bakımından HashMap sınıfına benzer. 
+        - HashMap hızlı ekleme(insert), arama(search) ve silme (delete) gibi avantajlar sağlamıştır ancak LinkedHashMap'in
+        sağlamış olduğu içerisine eklenmiş olan öğelerin ekleme sırasına göre öğelere erişme özelliğini sağlayamamıştır. 
+        
+        LinkedHashMap'in Özellikleri: 
+            - LinkedHashMap anahtar(key) bazlı değerler(values) içerir.
+            - Map interface'in implementasyonunu sağlar ve HashMap sınıfından miras alır.
+            - Yalnızca unique elementleri içerir.
+            - Yalnızca tek bir null key, birden fazla null value içerebilir.
+            - Non-synchronized bir yapıdadır (Multi-Threading yapı için güvenli değildir).
+            - Ekleme sırasını muhafaza etmesi ek özelliği ile HashMap ile ayrılır. Örneğin, kodu bir HashMap ile çalıştırdığımızda farklı bir öğe sırası elde ederiz.
+
+    ConcurrentHashMap Class:
+        - Ekleme sırasını muhafa etmez.
+        - Map interface'in multi-thread yapılar için oluşturmuş olduğu bir implementasyon sınıfıdır.
+        - Null key veya value'ya izin verilmez. Null bir değer eklenmeye çalışıldığında NullPointerException fırlatılır.
+        - HashMap sınıfda olan bütün functional özelliklere sahiptir.
+        - Thread-safe işlemleri bazında HashTable sınıfı ile birlikte çalışabilir.
+        - ConcurrentHashMap'in temel özelliklerinden biri fine-gained (ince taneli)  kilitleme sağlamasıdır. 
+          Yani update işlemi sırasında Map'in tamamı yerine yalnıca değiştirilen kısmı kilitler. Bu bize yüksek 
+          derece ölçeklenebilir ve verimli concurrent işlemleri yapmamıza olanak tanır. 
+        - Ek olarak ConcurrentHashMap çeşitli methodlar için putIfAbsent, replace ve clear gibi atomik operasyonlar sağlar. 
