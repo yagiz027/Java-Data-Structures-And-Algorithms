@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QueueMain",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.Queue.main.java.yagiz.QueueMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "ConcurrentHashMapMain",
             "request": "launch",
             "mainClass": "HashTables.main.java.yagiz.ConcurrentHashMapMain",
