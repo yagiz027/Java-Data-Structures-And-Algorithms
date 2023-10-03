@@ -17,5 +17,4 @@ public class QueueMain {
         System.out.println("Removed Element: "+ front);
         System.out.println("New Queue after removing operation: " + queueList);
     }
-
 }

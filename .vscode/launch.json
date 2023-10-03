@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TotalOfArrayShorcut",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.TotalOfArrayShortcut.TotalOfArrayShorcut",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "SortArrayByParity",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.SortArrayByParity.SortArrayByParity",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "NumberOfGoodPairs",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.NumberOfGoodPairs.NumberOfGoodPairs",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeNumbersMain",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.PalindromeNumbers.PalindromeNumbersMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "TwoNumbersMain",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.TwoNumbers.TwoNumbersMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "ReverseListİterasion",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.LinkedList.main.java.yagiz.LinkedListDataStructure.ReverseList.ReverseListİterasion",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "Sorted2SumMain",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.Sorted2Sum.Sorted2SumMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "TwoSumMain",
+            "request": "launch",
+            "mainClass": "TwoSumMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "SortExample",
+            "request": "launch",
+            "mainClass": "SortExample",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "QueueMain",
             "request": "launch",
             "mainClass": "LinearDataStructures.DynamicDataStructures.Queue.main.java.yagiz.QueueMain",
