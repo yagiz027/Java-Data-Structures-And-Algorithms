@@ -1,0 +1,18 @@
+Stack Class nedir:
+    - Java Collections Frameworks Stack veri yapısının modelleyen ve uygulayan bir Stack sınıfı sağlar. 
+    - Stack class'ı Last in First Out(LIFO) , yani son giren ilk çıkar ilkesini uygulamaktadır. 
+    - Temel push ve open işlemlerinin yanı sıra, üç farklı yöntem olan peek,search ve empty methodlarını sağlar. 
+    - Stack class'ı aynı zamanda Vector sınıfının bir alt sınıfı (sub-class) olarak da adlandırılabilir. 
+    - Implementasyonu nu aldığı interface'ler: 
+        - Seriazable 
+        - List<T> 
+        - Collection<T> 
+        - Iterable<T> 
+        - Clonable
+        - RandomAccess
+
+    Stack işlemler: 
+        push : Bir yığının en üstündeki index'ine değer ataması yapar.
+        pop : Bir yığının en üstündeki index'indeki değeri kaldırır ve kaldırılan değeri döndürür.
+        peek : Bir yığının en üstündeki değeri döndürür.
+         
