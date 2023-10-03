@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PalindromArrayMain",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.PalindromArray.PalindromArrayMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "StackMain",
+            "request": "launch",
+            "mainClass": "LinearDataStructures.DynamicDataStructures.Stack.main.java.yagiz.StackMain",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "TotalOfArrayShorcut",
             "request": "launch",
             "mainClass": "AlgorithmProblems.TotalOfArrayShortcut.TotalOfArrayShorcut",

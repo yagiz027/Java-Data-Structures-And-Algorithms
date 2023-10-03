@@ -15,4 +15,6 @@ Stack Class nedir:
         push : Bir yığının en üstündeki index'ine değer ataması yapar.
         pop : Bir yığının en üstündeki index'indeki değeri kaldırır ve kaldırılan değeri döndürür.
         peek : Bir yığının en üstündeki değeri döndürür.
-         
+        search : belirtilen elemanın stack içerisinde nerede olduğunu belirtir.
+
+

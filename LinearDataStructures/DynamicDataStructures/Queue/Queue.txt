@@ -3,7 +3,7 @@ Queue Interface:
     bulunan ve Collection interface'i miras alan bir veri yapısıdır.
     - Kullanımı listenin sonuna eleman eklemek ve listenin başından silme işlemini gerçekleştirmekle sınırlı olan
     bir sıralı nesne listesidir.
-    - Queue bir interface olduğundan Queue'nin bildirimi için somut bir sınıfa ihtiya. vardır ve en yaygın sınıflar 
+    - Queue bir interface olduğundan Queue'nin bildirimi için somut bir sınıfa ihtiyacı vardır ve en yaygın sınıflar 
     Java'daki PriorityQueue ve LinkedList sınıflarıdır. (Bu iki implementasyon da thread-safe açısından güvenli değildir).
     - PriorityBlockingQueue sınıfı, Queue interface'i için thread-safe açısından güvenli bir implementasyon alternatifidir.
     
