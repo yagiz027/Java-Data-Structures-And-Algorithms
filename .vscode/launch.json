@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestPalindromicSubstring",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.LongestPalindromicSubstring.LongestPalindromicSubstring",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "ReverseInteger",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.ReverseInteger.ReverseInteger",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "RomanToInteger",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.RomanToInteger.RomanToInteger",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "IntegerToRoman",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.RomanToInteger.IntegerToRoman",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "StringReversed",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.ReversedAlgorithm.StringReversed",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
+            "name": "StarOperataions",
+            "request": "launch",
+            "mainClass": "AlgorithmProblems.StarOperations.StarOperataions",
+            "projectName": "Java Data Structures And Algorithms_3aec33a5"
+        },
+        {
+            "type": "java",
             "name": "PalindromArrayMain",
             "request": "launch",
             "mainClass": "AlgorithmProblems.PalindromArray.PalindromArrayMain",
